@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Albion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  
+  <style>
+.smoke-holder span {
+    animation: smokie 2.2s linear infinite;
+    position: absolute;
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    width: 2px;
+    height: 10px;
+    top: 110px;
+    left: 60px;
+    z-index: -1;
+    filter: blur(1px);
+  }
+
+    .smoke-holder span:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    .smoke-holder span:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+
+    .smoke-holder span:nth-of-type(4) {
+      animation-delay: 0.9s;
+    }
+
+    .smoke-holder span:nth-of-type(5) {
+      animation-delay: 1.2s;
+    }
+
+    .smoke-holder span:nth-of-type(6) {
+      animation-delay: 1.5s;
+    }
+  
+
+@keyframes smokie {
+  25%, 75% {
+    left: 50px;
+  }
+  
+  50% {
+    left: 60px;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+  
+  100% {
+    top: -20px;
+    left: 60px;
+    filter: blur(4px);
+    opacity: 0;
+    transform: scale(6);
+  }
+}
+  .digital_menu.inner_menu{overflow: visible;}
+  .digital_menu{
+     margin: 0;
+     overflow: hidden;
+  }
+  h1.food_for{
+     text-align: center;
+     background-image: url('img/tape.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% 100%;
+  }
+</style>
+</head>
+<body>
+<section class="digitalmenu">
+   <div class="row digital_menu inner_menu">
+      <div class="col-lg-3 menu">
+         <!-- <h1 class="food_for">For Food<br>Devlivery</h1> -->
+         <h1 style="text-align: center;"><img src="img/jblogo.svg" alt="JB Albion" style="width: 32%"></h1>
+         <p class="number"><img src="img/call.jpg" alt="Number">(647) 793-6555</p>
+         <div class="JB_menu">
+            <h2 class="menu_JB">Pav Bhaji</h2>
+            <ul class="menuspoints innermenu">
+               <li><span class="item">Bhaji Pav <em>Butter</em></span><span class="price">$7.49</span></li>
+               <li><span class="item">Bhaji Pav <em>Cheese</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Bhaji Pav<em>Swaminarayan</em></span><span class="price">$7.49</span></li>
+               <!-- <li><span class="item">Bhaji Pav Cheese<em>Swaminarayan</em></span><span class="price">$8.49</span></li> -->
+               <li><span class="item">Extra Pav<em>Butter</em></span><span class="price">$0.99</span></li>
+               <li><span class="item">Masala Pav (BP)<em>Butter</em></span><span class="price">$1.99</span></li>
+               <li><span class="item">Masala Pav (BP)<em>Cheese</em></span><span class="price">$2.99</span></li>
+               <li><span class="item">Masala Pav Mixed with Bhaji<em>Butter</em></span><span class="price">$5.99</span></li>
+               <li><span class="item">Masala Pav Mixed with Bhaji<em>Cheese</em></span><span class="price">$6.99</span></li>
+               
+               
+            </ul>
+            
+         </div>
+      </div>
+      <div class="col-lg-3 menu">
+         <div class="JB_menu dabeli">
+          
+          <h2 class="menu_JB">Pulav</h2>
+            <ul class="menuspoints innermenu">
+               <li><span class="item">Pulav <em>Butter</em></span><span class="price">$6.49</span></li>
+               <li><span class="item">Pulav<em>Cheese</em></span><span class="price">$7.49</span></li>
+               <li><span class="item">Pulav Cheese<em>Swaminarayan</em></span><span class="price">$7.49</span></li>
+            </ul>
+            
+            <h2 class="menu_JB pulao">Roll</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Cheese Garlic Baked Roll</span><span class="price">$4.99</span></li>
+               <li><span class="item">Cheese Roll</span><span class="price">$4.99</span></li>
+               <li><span class="item">Cheese Vegetable roll</span><span class="price">$5.99</span></li>
+            </ul>
+            <div class="imgsec bhaji-pav">
+              
+              <img src="img/bhajipav.png" alt="Bhaji Pav" class="Bhjipav">
+          </div>
+         </div>
+      </div>
+       <div class="col-lg-3 menu southindia">
+         <div class="JB_menu juices">
+          <!-- <h2 class="menu_JB ">South India</h2>
+            <ul class="menuspoints innermenu">
+               <li><span class="item">Idli Samber/ Vada Sambar</span><span class="price">$3.99</span></li>
+               <li><span class="item">Plain Dosa<em>Butter</em></span><span class="price">$7.49</span></li>
+               <li><span class="item">Plain Dosa<em>Cheese</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Paper Plain Dosa<em>Butter</em></span><span class="price">$7.99</span></li>
+               <li><span class="item">Paper Plain Dosa<em>Cheese</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Mysore Plain Dosa<em>Butter</em></span><span class="price">$7.49</span></li>
+               <li><span class="item">Mysore Plain Dosa<em>Cheese</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Masala Dosa<em>Butter</em></span><span class="price">$7.99</span></li>
+               <li><span class="item">Masala Dosa<em>Cheese</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Mysore Masala Dosa<em>Butter</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Mysore Masala Dosa<em>Cheese</em></span><span class="price">$9.49</span></li>
+               <li><span class="item">Paper Masala Dosa<em>Butter</em></span><span class="price">$8.49</span></li>
+               <li><span class="item">Paper Masala Dosa<em>Cheese</em></span><span class="price">$9.49</span></li>
+            </ul> -->
+              <h2 class="menu_JB">Chinese</h2>
+            <ul class="menuspoints innermenu">
+               <li><span class="item">Manchurian Fried Rice</span><span class="price">$7.99</span></li>
+               <li><span class="item">Manchurian Noodles</span><span class="price">$7.99</span></li>
+               <li><span class="item">Schezwan Fried Rice</span><span class="price">$7.99</span></li>
+               <li><span class="item">Veg Fried Rice</span><span class="price">$7.99</span></li>
+               <li><span class="item">Veg Hakka Noodles</span><span class="price">$7.99</span></li>
+               <li><span class="item">Veg Schezwan Noodles</span><span class="price">$7.99</span></li>
+               <li><span class="item">Manchurian Dry</span><span class="price">$7.99</span></li>
+               <li><span class="item">Manchurian Gravy</span><span class="price">$7.99</span></li>
+               <li><span class="item">Paneer Chilly Dry</span><span class="price">$8.99</span></li>
+               <li><span class="item">Paneer Chilly Gravy</span><span class="price">$8.99</span></li>
+               <li><span class="item">Paneer Manchurian  Dry</span><span class="price">$8.99</span></li>
+               <li><span class="item">Paneer Manchurian  Gravy</span><span class="price">$8.99</span></li>
+            </ul>
+              <!-- <div class="imgsec dosa"><img src="img/dosa.png" alt="JB"></div> -->
+            
+         </div>
+      </div>
+      <div class="col-lg-3 menu ">
+          <div class="JB_menu chinese">
+            <h2 class="menu_JB" >Panipuri & Chaat</h2>
+            <ul class="menuspoints innermenu">
+               <li><span class="item">DahiPuri</span><span class="price">$6.49</span></li>
+               <li><span class="item">Bhel<em>Cheese</em></span><span class="price">$5.99</span></li>
+               <li><span class="item">Bhel<em>Regular</em></span><span class="price">$4.99</span></li>
+               <li><span class="item">Bhel Cheese<em>Swaminarayan</em></span><span class="price">$5.99</span></li>
+               <li><span class="item">Bhel Regular<em>Swaminarayan</em></span><span class="price">$4.99</span></li>
+               <li><span class="item">Sevpuri<em>Regular</em></span><span class="price">$5.49</span></li>
+               <li><span class="item">Panipuri</span><span class="price">$4.99</span></li>
+            </ul>
+            <!-- <div class="imgsec dosa"><img src="img/chaat.png" alt="JB"></div> -->
+            <div class="imgsec "><img src="img/chaat.png" alt="JB"></div>
+           
+         </div>
+      </div>
+     
+   </div>
+</section>
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/bootstrap.js"></script>
+<script>
+   jQuery(document).ready(function(){
+      // var width = jQuery(window).width();
+      // var height = jQuery(window).height();
+      // alert(width +'sfd'+ height);
+
+
+   });
+  
+   
+
+</script>
+</body>
+</html>

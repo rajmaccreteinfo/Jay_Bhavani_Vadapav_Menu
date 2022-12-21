@@ -1,0 +1,460 @@
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url("fonts/proxima-nova/ProximaNovaRegular.eot"), url("../fonts/proxima-nova/ProximaNovaRegular.woff") format("woff"), url("../fonts/proxima-nova/ProximaNovaRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'proxima_novablack';
+  src: url("fonts/proxima-nova/fontsfree-net-proxima-nova-black-webfont.woff2") format("woff2"), url("../fonts/proxima-nova/fontsfree-net-proxima-nova-black-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_nova_rgbold';
+  src: url("fonts/proxima-nova/fontsfree-net-proxima-nova-bold-webfont.woff2") format("woff2"), url("../fonts/proxima-nova/fontsfree-net-proxima-nova-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novathin';
+  src: url("fonts/proxima-nova/fontsfree-net-proxima-nova-thin-webfont.woff2") format("woff2"), url("../fonts/proxima-nova/fontsfree-net-proxima-nova-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaextrabold';
+  src: url("fonts/proxima-nova/fontsfree-net-proxima-nova-xbold-webfont.woff2") format("woff2"), url("../fonts/proxima-nova/fontsfree-net-proxima-nova-xbold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaextrabold_italic';
+  src: url("fonts/proxima-nova/fontsfree-net-proxima-nova-xbold-it-webfont.woff2") format("woff2"), url("../fonts/proxima-nova/fontsfree-net-proxima-nova-xbold-it-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Rockwell-Condensed';
+  src: url("fonts/Rockwell/Rockwell-Condensed.eot?#iefix") format("embedded-opentype"), url("../fonts/Rockwell/Rockwell-Condensed.woff") format("woff"), url("../fonts/Rockwell/Rockwell-Condensed.ttf") format("truetype"), url("../fonts/Rockwell/Rockwell-Condensed.svg#Rockwell-Condensed") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'fjallaoneregular';
+  src: url("fonts/Rockwell/fjallaone-regular-webfont.woff2") format("woff2"), url("../fonts/Rockwell/fjallaone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/roboto/roboto-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto"), local("Roboto-Regular"), url("../fonts/roboto/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin-regular.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin-regular.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin-regular.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/roboto/roboto-v20-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Roboto Medium"), local("Roboto-Medium"), url("../fonts/roboto/fonts/roboto-v20-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto/roboto-v20-latin-500.woff2") format("woff2"), url("../fonts/roboto/roboto-v20-latin-500.woff") format("woff"), url("../fonts/roboto/roboto-v20-latin-500.ttf") format("truetype"), url("../fonts/roboto/roboto-v20-latin-500.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+
+/* roboto-500 - latin */
+@font-face {
+  font-family: 'Calibri';
+  font-style: normal;
+  /* IE9 Compat Modes */
+  src: local("Calibri"), local("Calibri");
+  /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'motoyalcedarw3_mono';
+  src: url("fonts/kosugi-regular-webfont.woff2") format("woff2"), url("../fonts/kosugi-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('font/Anton.eot');
+    src: url('font/Anton.eot?#iefix') format('embedded-opentype'),
+        url('font/Anton.woff') format('woff'),
+        url('font/Anton.ttf') format('truetype'),
+        url('font/Anton.svg#Anton') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Antonio';
+    src: url('font/Antonio-Regular.eot');
+    src: url('font/Antonio-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/Antonio-Regular.woff') format('woff'),
+        url('font/Antonio-Regular.ttf') format('truetype'),
+        url('font/Antonio-Regular.svg#Antonio-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rileno Sans';
+    src: url('font/RilenoSans-Regular.eot');
+    src: url('font/RilenoSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/RilenoSans-Regular.woff') format('woff'),
+        url('font/RilenoSans-Regular.ttf') format('truetype'),
+        url('font/RilenoSans-Regular.svg#RilenoSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rileno Sans';
+    src: url('font/RilenoSans-Bold.eot');
+    src: url('font/RilenoSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/RilenoSans-Bold.woff') format('woff'),
+        url('font/RilenoSans-Bold.ttf') format('truetype'),
+        url('font/RilenoSans-Bold.svg#RilenoSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body{
+  height: 100%;
+}
+body{
+  margin: 0;
+  background-color: #000;
+}
+
+
+/* :root {
+  --gray: #5F554D;
+  --yellow: #FCD300;
+  --height: 852;
+} */
+.digital_menu.row{height: 100%;margin: 0;}
+.JB_menu{position: relative;}
+.menu.JB_menu{
+    /* display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px; */
+}
+.JB_menu:after{
+  /* content: ''; */
+  width: 2px;
+  height: 80%;
+  position: absolute;right: -15px;top: 0;
+  background-color: var(--yellow);
+}
+.JB_menu.dabeli:after{
+  top: 6em;
+  height: 75%;
+}
+.JB_menu.puff:after{
+  top: 8em;
+  height: 55%;
+}
+.JB_menu.juices:after{
+  background-color: transparent;
+}
+.menu h1.food_for{
+  font-family: 'Anton';
+  text-transform: uppercase;
+  padding: 0.2em 0 0.05em;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+.menu .number{
+  font-family: 'Antonio';
+  font-size: 2.5vw;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.number img{margin-right: 14px;}
+h2.menu_JB{
+  font-family: 'Anton';
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase;
+  background-image: url('img/tape.png');
+  background-repeat: no-repeat;
+  background-position: 37% center;
+  background-size: auto 100%;
+  padding-left: 5px;
+  margin: 0;
+}
+ul.menuspoints{list-style: none;margin:0;padding:0 0 0 5px;}
+ul.menuspoints.innermenu li{margin-bottom: 0;}
+ul.menuspoints li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+ul.menuspoints li .price{
+  font-family: 'Anton';
+  font-size: 2vw;
+  color: var(--gray);
+}
+ul.menuspoints li .item{
+  font-family: 'Rileno Sans';
+  font-size: 1.4vw;
+  font-weight: normal;
+  position: relative;
+}
+ul.menuspoints li .item em {
+    font-size: 1vw;
+    font-style: normal;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    color: var(--yellow);
+    font-family: 'Rileno Sans';
+    font-weight: bold;
+}
+/**/
+/*new menu css*/
+.menuspoints{list-style: none;margin:0;padding:0 0 0 5px;}
+ul.menuspoints.innermenu li{margin-bottom: 0;}
+.menuspoints .product_list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+.menuspoints .product_list .price{
+  font-family: 'Anton';
+  font-size: 2vw;
+  color: var(--gray);
+}
+.menuspoints .product_list .item{
+  font-family: 'Rileno Sans';
+  font-size: 1.4vw;
+  font-weight: normal;
+  position: relative;
+}
+.menuspoints .product_list .item em {
+    font-size: 1vw;
+    font-style: normal;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    color: var(--yellow);
+    font-family: 'Rileno Sans';
+    font-weight: bold;
+}
+.JB_menu .menuspoints.firstmenu{
+  margin-top: 206px;
+}
+.logosection{}
+.logosection{margin: 0;padding:0;list-style: none;}
+.menuspoints.firstmenu{column-count: 4;}
+.imgsec img{width: 100%;}
+/*end new menu css*/
+/**/
+.imgsec{text-align: center;position: relative;}
+h2.menu_JB.pulao{margin-top: 0.2em;}
+h2.menu_JB.Maggi {
+    margin-top: 20px;
+}
+
+
+
+.ag-sherlock-block {
+  background: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/city.jpg) no-repeat scroll 50% 0 #000;
+  background-size: cover;
+}
+.ag-sherlock {
+  height: 73.375em;
+  width: 45.8125em;
+  background: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/sherlock.png) no-repeat scroll 0 0;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+  z-index: 5;
+  position: relative;
+}
+.ag-sherlock_smoke {
+  display: block;
+  height: 21.25em;
+  width: 16.875em;
+
+  opacity: 1;
+
+  position: absolute;
+  top: -7.9375em;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transition: opacity 2.4s linear;
+  -moz-transition: opacity 2.4s linear;
+  -o-transition: opacity 2.4s linear;
+  transition: opacity 2.4s linear;
+}
+
+.ag-smoke-4 {
+  width: 61.4em;
+
+  z-index: 100;
+  position: absolute;
+  top: -12em;
+  right: 0;
+
+  -webkit-animation: an-smoke-3 6s ease-in-out infinite;
+  -moz-animation: an-smoke-3 6s ease-in-out infinite;
+  -o-animation: an-smoke-3 6s ease-in-out infinite;
+  animation: an-smoke-3 6s ease-in-out infinite;
+}
+
+@-webkit-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@-moz-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -moz-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -moz-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@-o-keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -o-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -o-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+@keyframes an-smoke-3 {
+  0% {
+    opacity: 0;
+
+    -webkit-transform: translateY(10%) rotate(.01deg);
+    -moz-transform: translateY(10%) rotate(.01deg);
+    -o-transform: translateY(10%) rotate(.01deg);
+    transform: translateY(10%) rotate(.01deg);
+  }
+  50% {
+    opacity: .9;
+  }
+  to {
+    opacity: 0;
+
+    -webkit-transform: translate(-10%, 5%) rotate(.01deg);
+    -moz-transform: translate(-10%, 5%) rotate(.01deg);
+    -o-transform: translate(-10%, 5%) rotate(.01deg);
+    transform: translate(-10%, 5%) rotate(.01deg);
+  }
+}
+img.vadapavimgarea{/* position: absolute;left: 2.5em;z-index: 100; */}
+
+@media (min-width: 2160px){
+  .ag-sherlock_smoke{top: -15.9375em;}
+}
+@media (max-width: 1600px){
+  .menu h1.food_for{font-size: 2.5vw;}
+  h2.menu_JB{font-size: 3vw;}
+  ul.menuspoints li .item em{font-size: 1.2vw;}
+  ul.menuspoints li{margin-bottom: 10px;}
+  .JB_menu.puff .imgsec img{width: 14vw;}
+  .JB_menu.puff .imgsec.fries img{width:19vw;}
+  .JB_menu.juices h2.menu_JB.juices{margin-top: 1em;}
+}
+@media (max-width: 1440px){
+  ul.menuspoints li{margin-bottom: 20px;}
+  ul.menuspoints li .item{font-size: 1.8vw;}
+  .ag-sherlock_smoke{top: -13.9375em;}
+}
+@media (max-width: 1366px){
+  h2.menu_JB{font-size: 3vw;}
+  ul.menuspoints li{margin-bottom: 5px;}
+  ul.menuspoints li .item em{font-size: 1vw;}
+  .menu h1.food_for{font-size: 2vw;}
+  .puff .imgsec img{width: 15vw;}
+}
+@media (max-width: 1280px){
+  .number img{width: 30px;}
+  .menu .number{margin-bottom: 0.5vw;font-size: 2vw;}
+  .ag-smoke-4{top: -18em;}
+  .ag-sherlock_smoke{top: -12.9375em;}
+  ul.menuspoints li .item em{bottom: -10px;}
+  ul.menuspoints li .item{font-size: 1.4vw;}
+  ul.menuspoints li .price{font-size: 1.5vw;}
+  .JB_menu.puff .imgsec.fries img{width: 16vw;}
+  .imgsec.jblogo img{width: 16vw;}
+  .imgsec.dabeliimg img{width: 15vw;}
+  .imgsec.vadapavimg img{width: 18vw;}
+  h2.menu_JB{background-position: -25px center;}
+  .JB_menu.puff .imgsec img{width:15vw;}
+  img.vadapavimgarea{left: 0.2em;}
+  .imgsec.vadapavarea .ag-sherlock_smoke{top: -10.9375em;}
+  .imgsec.dabeliarea .ag-sherlock_smoke{top: -9.9375em;}
+  .imgsec.vadapavarea .ag-sherlock_smoke.ag-sher_locksmoke{height: 11em;left: 55%;z-index: 1000;top:-2em;}
+  .imgsec.vadapavarea .ag-sherlock_smoke.ag-sherlocksmoke{height: 15em;left: 35%;z-index: 1000;top:-7em;}
+  .imgsec.vadapavarea .ag-sherlock_smoke.ag-sherlock_smokes{height: 18em;left: 77%;z-index: 1000;}
+  .imgsec.dabeliarea .ag-sherlock_smoke.sherlock {height: 7em;left: 61%;top: 4em;width: 20em;}
+  .imgsec.dabeliarea svg.ag-sherlock_smoke.sher_lock {left: 70%;height: 11em;top: -1em;}
+  .imgsec.dabeliarea .ag-sherlock_smoke.sherlocks{left: 90%;height: 15em;top: -3em;}
+  ul.menuspoints.innermenu li{margin-bottom: 0.5em;}
+  .inner_menu ul.menuspoints li .item{font-size: 1.25vw;}
+  .inner_menu ul.menuspoints li .price{font-size: 1.35vw;}
+  
+}

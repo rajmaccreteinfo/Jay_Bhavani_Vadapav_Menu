@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Albion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Francois+One&family=Lobster&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+  
+
+    .smoke-holder span {
+      animation: smokie 2.2s linear infinite;
+      position: absolute;
+      border: 2px solid rgba(128, 128, 128, 0.2);
+      width: 2px;
+      height: 10px;
+      top: 110px;
+      left: 60px;
+      z-index: -1;
+      filter: blur(1px);
+    }
+
+    .smoke-holder span:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    .smoke-holder span:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+
+    .smoke-holder span:nth-of-type(4) {
+      animation-delay: 0.9s;
+    }
+
+    .smoke-holder span:nth-of-type(5) {
+      animation-delay: 1.2s;
+    }
+
+    .smoke-holder span:nth-of-type(6) {
+      animation-delay: 1.5s;
+    }
+
+
+    @keyframes smokie {
+
+      25%,
+      75% {
+        left: 50px;
+      }
+
+      50% {
+        left: 60px;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        top: -20px;
+        left: 60px;
+        filter: blur(4px);
+        opacity: 0;
+        transform: scale(6);
+      }
+    }
+
+    .digital_menu.inner_menu {
+      overflow: visible;
+    }
+
+    .digital_menu {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h1.food_for {
+      text-align: center;
+      background-image: url('img/tape.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="digitalmenu" style="padding-top: 30px;">
+    <div class="row digital_menu inner_menu">
+      <div class="col-lg-4 menu" >
+        <!-- <h1 class="food_for">For Food<br>Devlivery</h1> -->
+        <!-- <h1 style="text-align: center;"><img src="img/jblogo.svg" alt="JB Albion" style="width: 32%"></h1>
+        <p class="number"><img src="img/call.jpg" alt="Number">(647) 793-6555</p> -->
+        <div class="JB_menu">
+          <h2 class="menu_JB pulao">JAY BHAVANI ROADSIDE SPECIAL</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>A1</p>Bombay Vadapav</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>A2</p>Butter Vadapav</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>A3</p>Butter Vadapav with Cheese</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>A4</p>Swaminarayan Butter Vadapav</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>A5</p>Swaminarayan Butter Vadapav with Cheese</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>A6</p>Jain Butter Vadapav</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>A7</p>Jain Butter Vadapav with Cheese</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>A8</p>JAY BHAVANI SPECIAL Exotic Vadapav</span><span class="price">$9.90</span></li>
+            <li><span class="item"><p>A9</p>Butter Dabeli</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>A10</p>Butter Dabeli with Cheese</span><span class="price">$8.50</span></li>
+            <li><span class="item"><p>A11</p>Swaminarayan Butter Dabeli</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>A12</p>Swaminarayan Butter Dabeli with Cheese</span><span class="price">$8.50</span></li>
+            <li><span class="item"><p>A13</p>Jain Butter Dabeli</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>A14</p>Jain Butter Dabeli with Cheese</span><span class="price">$8.50</span></li>
+            <li><span class="item"><p>A15</p>Buff Vada</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>A16</p>Butter Pav Bhaji</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>A17</p>Cheese Pav Bhaji</span><span class="price">$16.90</span></li>
+            <li><span class="item"><p>A18</p>Swaminarayan Butter Pav Bhaji</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>A19</p>Swaminarayan Cheese Pav Bhaji</span><span class="price">$16.90</span></li>
+            <li><span class="item"><p>A20</p>Jain Butter Pav Bhaji</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>A21</p>Jain Cheese Pav Bhaji</span><span class="price">$16.90</span></li>
+            <li><span class="item"><p>A22</p>Masala Pav with Bhaji in Butter</span><span class="price">$15.90</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 menu">
+        <div class="JB_menu dabeli">
+          <div class="imgsec dabeliarea">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke">
+              <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+              </mask>
+              <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+              </mask>
+              <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+              </image>
+              <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+              </image>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sherlock">
+              <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+              </mask>
+              <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+              </mask>
+              <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+              </image>
+              <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+              </image>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sher_lock">
+              <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+              </mask>
+              <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+              </mask>
+              <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+              </image>
+              <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+              </image>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sherlocks">
+              <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+              </mask>
+              <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+              </mask>
+              <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+              </image>
+              <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+              </image>
+            </svg>
+            <img src="img/dabeli.png" alt="Dabeli">
+         </div>
+          <h2 class="menu_JB juices">JAY BHAVANI SANDWICH SIDES</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>B1</p>Vegetable Sandwich</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>B2</p>Vegetable Grill Sandwich </span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>B3</p>Cheese Vegetable Sandwich </span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>B4</p>Aloo Mutter Sandwich- Regular</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>B5</p>Aloo Mutter Sandwich -Grill</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>B6</p>Regular Chatni Sandwich</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>B7</p>Cheese Grill Chatni Sandwich </span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>B8</p>Sing & Nylon sev Slice</span><span class="price">$2.50</span></li>
+            <li><span class="item"><p>B9</p>Butter/Cheese/ Chutney Slice</span><span class="price">$2.50</span></li>
+            <li><span class="item"><p>B10</p>Mix Fruit Jam Cheese Sandwich </span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>B11</p>Pineapple Jam Cheese Sandwich</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>B12</p>CTC (JAY BHAVANI SPECIAL) </span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>B13</p>SWAMINARAYAN CTC (JAY BHAVANI SPECIAL)</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>B14</p>JAIN CTC (JAY BHAVANI SPECIAL)</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>B15</p>Cub sandwich with Mayo / Shezwan and layers</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>B16</p>3 in 1 Sandwich</span><span class="price">$12.90</span></li>
+          </ul>  
+          <div class="imgsec milk_shake"><img src="img/sandwich.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI CHAAT CENTRE</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>C1</p>Regular Bhel</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>C2</p>Cheese Bhel </span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>C3</p>Jain Regular Bhel</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>C4</p>Jain Cheese Bhel</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>C5</p>Jain Regular Sevpuri</span><span class="price">$8.90</span></li>
+            <li><span class="item"><p>C6</p>Dahi Puri/ Chutney Puri (8 PC)</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>C7</p>Papdi Chaat</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>C8</p>Panipuri (10 PC)</span><span class="price">$2.50</span></li>
+            <li><span class="item"><p>C9</p>Regular Sevpuri (8 PC)</span><span class="price">$2.50</span></li>
+            <li><span class="item"><p>C10</p>Ragda Puri/ Chaat</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>C11</p>Cheese Ragda Chaat</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>C12</p>Chole Tikki</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>C13</p>Samosa Chaat</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>C14</p>Samosa with Chutney 2pcs</span><span class="price">$10.90</span></li>
+          </ul> 
+
+          <div class="imgsec milk_shake"><img src="img/chaat.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI TRADITIONAL</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>D1</p>Veg. Puff</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>D2</p>Chinese Puff</span><span class="price">$7.90</span></li>
+            <li><span class="item"><p>D3</p>Jay Bhavani Special Puff</span><span class="price">$9.90</span></li>
+            <li><span class="item"><p>D4</p>Maskabun with Pineapple Jam</span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>D5</p>Maskabun with Mix Fruit Jam</span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>D6</p>Maskabun Cheese Chutney</span><span class="price">$6.90</span></li>
+            <li><span class="item"><p>D7</p>Bhakri Chilli Garlic Pizza</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>D8</p>Italian Pizza</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>D9</p>Double Cheese Italian Pizza</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>D10</p>Mexican Pizza</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>D11</p>Vegetable Maggi Butter</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>D12</p>Vegetable Maggi Cheese</span><span class="price">$11.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/pizza-img.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI MIX CULTURE </h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>E1</p>Dhal Makhani with Paratha</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>E2</p>Dhal Makhani with Jeera Rice</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>E3</p>Rajma with Paratha</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>E4</p>Rajma with Rice</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>E5</p>Chole With Malabar Paratha</span><span class="price">$13.90</span></li>
+            <li><span class="item"><p>E6</p>Idli with Sambhar</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>E7</p>Medu Vada</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>E8</p>Ragda Vada With Misal Chavana</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>E9</p>Cheese Ragda Vada with Misal Chavana</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>E10</p>Ragda Misal Chavana & PAV</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>E11</p>Cheese Ragda Misal Chavana</span><span class="price">$11.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/RagdaVada.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI WESTERN STYLE</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>F1</p>French Fries Regular</span><span class="price">$4.50</span></li>
+            <li><span class="item"><p>F2</p>French Fries Cheese</span><span class="price">$4.90</span></li>
+            <li><span class="item"><p>F3</p>Cheese Hot Dog</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>F4</p>Cheese Vegetable Burger</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>F5</p>Regular Burger</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>F6</p>Vegetable Burger -Fries</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>F7</p>Cheese Roll</span><span class="price">$10.90</span></li>
+            <li><span class="item"><p>F8</p>Cheese Garlic Baked Roll</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>F9</p>Cheese Vegetable Roll</span><span class="price">$11.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/FrenchFriesRegular.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI INDO CHINESE </h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>G1</p>Manchurian Noodles</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G2</p>Manchurian Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G3</p>Manchurian Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G4</p>Paneer Chilly Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G5</p>Paneer Chilly Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G6</p>Paneer Manchurian Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G7</p>Paneer Manchurian Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G8</p>Veg Fried Rice</span><span class="price">$13.90</span></li>
+            <li><span class="item"><p>G9</p>Manchurian Fried Rice</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G10</p>Schezwan Fried Rice</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>G11</p>Veg Hakka Noodles</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>G12</p>Veg Schezwan Noodles</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G13</p>Jain Pulav Butter</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>G14</p>Jain Pulav Cheese</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>G15</p>Vegetable Pulav Butter</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>G16</p>Pulav Cheese</span><span class="price">$13.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/VegetableRoll.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI SPECIAL BEVERAGES</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>H1</p>Jamun Juice </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H2</p>Alphanso Mango Juice</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H3</p>Spicy Guava Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H4</p>Jamun Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H5</p>Mango Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H6</p>Chikoo Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H7</p>Kesar Mango Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H8</p>Oreo Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H9</p>Rose Gulkand Shake </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H10</p>Sitafal Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H11</p>Thandai Shake </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H12</p>Mango Lassi</span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>H13</p>Rose Lassi </span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>H14</p>MASALA TEA</span><span class="price">$3.90</span></li>
+            <li><span class="item"><p>H15</p>INSTANT COFFEE</span><span class="price">$3.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/milk_shake.png" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      // var width = jQuery(window).width();
+      // var height = jQuery(window).height();
+      // alert(width +'sfd'+ height);
+
+
+    });
+
+
+
+  </script>
+</body>
+
+</html>

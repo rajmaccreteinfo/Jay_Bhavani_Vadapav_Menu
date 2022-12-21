@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8 />
+<!-- *** HTML Template Meta *** -->
+<title>Restaurant Promotion | HTML Digital Signage Template</title>
+<meta name="description" content="The Restaurant Promotion Template was created to display a series of animated promotions that can be modified to accommodate your specific message." />
+
+<!-- Schema.org markup for Google+ -->
+<meta itemprop="name" content="Restaurant Promotion">
+<meta itemprop="description" content="The Restaurant Promotion Template was created to display a series of animated promotions that can be modified to accommodate your specific message.">
+<meta itemprop="image" content="http://goo.gl/KXsGHg">
+
+<!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@RiseVision">
+<meta name="twitter:title" content="Restaurant Promotion">
+<meta name="twitter:description" content="The Restaurant Promotion Template was created to display a series of animated promotions that can be modified to accommodate your specific message.">
+<meta name="twitter:image:src" content="http://goo.gl/KXsGHg">
+
+<!-- Open Graph data -->
+<meta property="og:title" content="Restaurant Promotion" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-promotion/restaurant-promotion.html" />
+<meta property="og:image" content="http://goo.gl/KXsGHg" />
+<meta property="og:description" content="The Restaurant Promotion Template was created to display a series of animated promotions that can be modified to accommodate your specific message." />
+
+<!-- Style Sheet -->
+<link rel="stylesheet" type="text/css" href="restaurant-promotion.css">
+    
+<!-- Fav Icon -->
+<link rel="shortcut icon" href="http://rise-vision.github.io/content-templates/favicon.ico" />
+</head>
+    <body>
+        <iframe id="content" frameBorder="0"></iframe>
+        <script>
+            (function() {
+                var e = document.getElementById('content'),
+                    f = function( el, url ) {
+                        el.src = url;
+                    },
+                    urls = ['http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-promotion/fresh-prepared/fresh-prepared.html','http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-promotion/sourced-locally/sourced-locally.html','http://commondatastorage.googleapis.com/risemedialibrary-395c64e5-2930-460b-881e-009aabb157df/content-templates/restaurant-promotion/chef-profile/chef-profile.html'
+                    ],
+                    i = 0,
+                    l = urls.length;
+
+                    (function rotation() {
+                        if ( i != l-1 ) { 
+                            i++
+                        } else {
+                            i = 0;
+                        }
+                        f( e, urls[i] );
+                        setTimeout( arguments.callee, 10000 );
+                    })();
+            })();
+        </script>
+    </body>
+</html>

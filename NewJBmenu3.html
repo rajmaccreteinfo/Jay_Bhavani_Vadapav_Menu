@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Albion</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Denk+One&family=Francois+One&family=Lobster&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+  <style>
+  
+
+    .smoke-holder span {
+      animation: smokie 2.2s linear infinite;
+      position: absolute;
+      border: 2px solid rgba(128, 128, 128, 0.2);
+      width: 2px;
+      height: 10px;
+      top: 110px;
+      left: 60px;
+      z-index: -1;
+      filter: blur(1px);
+    }
+
+    .smoke-holder span:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    .smoke-holder span:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+
+    .smoke-holder span:nth-of-type(4) {
+      animation-delay: 0.9s;
+    }
+
+    .smoke-holder span:nth-of-type(5) {
+      animation-delay: 1.2s;
+    }
+
+    .smoke-holder span:nth-of-type(6) {
+      animation-delay: 1.5s;
+    }
+
+
+    @keyframes smokie {
+
+      25%,
+      75% {
+        left: 50px;
+      }
+
+      50% {
+        left: 60px;
+      }
+
+      90% {
+        opacity: 1;
+      }
+
+      100% {
+        top: -20px;
+        left: 60px;
+        filter: blur(4px);
+        opacity: 0;
+        transform: scale(6);
+      }
+    }
+
+    .digital_menu.inner_menu {
+      overflow: visible;
+    }
+
+    .digital_menu {
+      margin: 0;
+      overflow: hidden;
+    }
+
+    h1.food_for {
+      text-align: center;
+      background-image: url('img/tape.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="digitalmenu" style="padding-top: 30px;">
+    <div class="row digital_menu inner_menu">
+
+        <!-- <h1 class="food_for">For Food<br>Devlivery</h1> -->
+        <!-- <h1 style="text-align: center;"><img src="img/jblogo.svg" alt="JB Albion" style="width: 32%"></h1>
+        <p class="number"><img src="img/call.jpg" alt="Number">(647) 793-6555</p> -->
+  
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI INDO CHINESE </h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>G1</p>Manchurian Noodles</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G2</p>Manchurian Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G3</p>Manchurian Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G4</p>Paneer Chilly Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G5</p>Paneer Chilly Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G6</p>Paneer Manchurian Dry</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G7</p>Paneer Manchurian Gravy</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G8</p>Veg Fried Rice</span><span class="price">$13.90</span></li>
+            <li><span class="item"><p>G9</p>Manchurian Fried Rice</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G10</p>Schezwan Fried Rice</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>G11</p>Veg Hakka Noodles</span><span class="price">$14.90</span></li>
+            <li><span class="item"><p>G12</p>Veg Schezwan Noodles</span><span class="price">$15.90</span></li>
+            <li><span class="item"><p>G13</p>Jain Pulav Butter</span><span class="price">$11.90</span></li>
+            <li><span class="item"><p>G14</p>Jain Pulav Cheese</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>G15</p>Vegetable Pulav Butter</span><span class="price">$12.90</span></li>
+            <li><span class="item"><p>G16</p>Pulav Cheese</span><span class="price">$13.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/VegetableRoll.svg" alt="Milk Shakes"></div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 menu ">
+        <div class="JB_menu ">
+          <h2 class="menu_JB ">JAY BHAVANI SPECIAL BEVERAGES</h2>
+          <ul class="menuspoints">
+            <li><span class="item"><p>H1</p>Jamun Juice </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H2</p>Alphanso Mango Juice</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H3</p>Spicy Guava Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H4</p>Jamun Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H5</p>Mango Shots</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H6</p>Chikoo Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H7</p>Kesar Mango Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H8</p>Oreo Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H9</p>Rose Gulkand Shake </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H10</p>Sitafal Shake</span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H11</p>Thandai Shake </span><span class="price">$7.50</span></li>
+            <li><span class="item"><p>H12</p>Mango Lassi</span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>H13</p>Rose Lassi </span><span class="price">$5.90</span></li>
+            <li><span class="item"><p>H14</p>MASALA TEA</span><span class="price">$3.90</span></li>
+            <li><span class="item"><p>H15</p>INSTANT COFFEE</span><span class="price">$3.90</span></li>
+          </ul> 
+          <div class="imgsec milk_shake"><img src="img/milk_shake.png" alt="Milk Shakes"></div>
+        </div>
+      </div>
+      </div>
+
+  </section>
+
+  <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script src="js/bootstrap.js"></script>
+  <script>
+    jQuery(document).ready(function () {
+      // var width = jQuery(window).width();
+      // var height = jQuery(window).height();
+      // alert(width +'sfd'+ height);
+
+
+    });
+
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Albion</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  
+  <style>
+    .owl-carousel {
+   max-width: 100%;
+   width: 100%;
+  }
+   .owl-carousel .owl-nav {
+     padding-top: 0.4em;
+     font-family: sans-serif;
+     font-size: 2em;
+       position: absolute;
+       width: 100%;
+       bottom: 50%;
+       left: 0;
+  }
+  .owl-carousel .owl-nav button.owl-prev {
+      background-color: rgba(0,0,0,0.8);
+      width: 42px;
+      color: #fff;
+      line-height: normal;
+      border-top-right-radius: 50%;
+      border-bottom-right-radius: 50%;
+      height: 50px;
+      margin-left: -13px;
+  }
+  .owl-carousel .owl-nav button.owl-prev span {
+      line-height: normal;
+  }
+  .owl-carousel .owl-nav button.owl-next span {
+      line-height: normal;
+  }
+  .owl-carousel .owl-nav button.owl-next{
+    background-color: rgba(0,0,0,0.8);
+      width: 42px;
+      color: #fff;
+      line-height: normal;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      height: 50px;
+      margin-right: -13px;
+  }
+   .owl-carousel .owl-nav > div {
+     padding: 0.4em 1.4em;
+     border: 1px solid #333;
+     background: #000;
+     color: white;
+     border-radius: 0.4em;
+     background-image: linear-gradient(rgba(255, 255, 255, .3), rgba(0, 0, 0, .2));
+     box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, .5);
+  }
+  }
+   .owl-carousel .owl-nav > div:hover {
+     background-color: #333;
+  }
+   .owl-carousel .owl-nav .owl-prev {
+     float: left;
+  }
+   .owl-carousel .owl-nav .owl-next {
+     float: right;
+  }
+   .owl-carousel-vertical{
+  /* transform: rotate3d(0, 0, 1, 90deg); */
+}
+.owl-carousel-vertical .item{
+  /* transform: rotate3d(0, 0, 1, -90deg); */
+}
+
+
+.smoke-holder span {
+    animation: smokie 2.2s linear infinite;
+    position: absolute;
+    border: 2px solid rgba(128, 128, 128, 0.2);
+    width: 2px;
+    height: 10px;
+    top: 110px;
+    left: 60px;
+    z-index: -1;
+    filter: blur(1px);
+  }
+
+    .smoke-holder span:nth-of-type(2) {
+      animation-delay: 0.3s;
+    }
+
+    .smoke-holder span:nth-of-type(3) {
+      animation-delay: 0.6s;
+    }
+
+    .smoke-holder span:nth-of-type(4) {
+      animation-delay: 0.9s;
+    }
+
+    .smoke-holder span:nth-of-type(5) {
+      animation-delay: 1.2s;
+    }
+
+    .smoke-holder span:nth-of-type(6) {
+      animation-delay: 1.5s;
+    }
+  
+
+@keyframes smokie {
+  25%, 75% {
+    left: 50px;
+  }
+  
+  50% {
+    left: 60px;
+  }
+  
+  90% {
+    opacity: 1;
+  }
+  
+  100% {
+    top: -20px;
+    left: 60px;
+    filter: blur(4px);
+    opacity: 0;
+    transform: scale(6);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+
+@media only screen and (max-width: 639px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+
+}
+
+
+.digital_menu{
+   margin: 0;
+   overflow: hidden;
+   padding: 0 1em;
+}
+h1.food_for{
+   text-align: center;
+   background-image: url('img/tape.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 100%;
+}
+</style>
+</head>
+<body>
+<section class="digitalmenu">
+   <div class="row digital_menu">
+      <div class="col-lg-3 menu">
+         <!-- <h1 class="food_for">For Food<br>Devlivery</h1> -->
+         <h1 style="text-align: center;"><img src="img/jblogo.svg" alt="JB Albion" style="width: 32%"></h1>
+         <p class="number"><img  src="img/call.jpg" alt="Number">(647) 793-6555</p>
+         <div class="JB_menu">
+            <h2 class="menu_JB">Vada Pav</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Bombay Vadapav</span><span class="price">$3.99</span></li>
+               <li><span class="item">Vadapav <em>Butter</em></span><span class="price">$4.49</span></li>
+               <li><span class="item">Vadapav <em>Cheese</em></span><span class="price">$5.49</span></li>
+               <li><span class="item">Vadapav in Butter<em>Swaminarayan</em></span><span class="price">$4.49</span></li>
+               <li><span class="item">Vadapav with Cheese<em>Swaminarayan</em></span><span class="price">$5.49</span></li>
+            </ul>
+            <div class="imgsec vadapavarea">
+               <!-- <div class="ag-smoke-4"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+    <div class="ag-smoke-4 ag-smoke__delay-1"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div>
+    <div class="ag-smoke-4 ag-smoke__delay-2"><img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-img/images/smoke-4.png"></div> -->
+               <!-- <img src="img/vadapavbg.png" alt="vadapav">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke ag-sherlocksmoke">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke ag-sher_locksmoke">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke ag-sherlock_smokes">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg> -->
+               <img src="img/vadapav.gif" class="vadapavimgarea" alt="vadapav">
+                
+                  
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-3 menu">
+         <div class="JB_menu dabeli">
+            <h2 class="menu_JB">dabeli</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Dabeli in Butter</span><span class="price">$3.99</span></li>
+               <li><span class="item">Dabeli<em>Cheese</em></span><span class="price">$4.49</span></li>
+               <li><span class="item">Dabeli Butter<em>Swaminarayan</em></span><span class="price">$3.99</span></li>
+               <li><span class="item">Dabeli Cheese<em>Swaminarayan</em></span><span class="price">$4.49</span></li>
+            </ul>
+            <div class="imgsec dabeliarea">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sherlock">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sher_lock">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke sherlocks">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="img/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <img src="img/dabeli.png" alt="Dabeli">
+
+            </div>
+            <h2 class="menu_JB">French Fries</h2>
+            <ul class="menuspoints">
+               <li><span class="item">French Fries<em>Regular</em></span><span class="price">$2.99</span></li>
+               <li><span class="item">French Fries<em>Cheese</em></span><span class="price">$3.99</span></li>
+            </ul>
+         </div>
+      </div>
+      <div class="col-lg-3 menu">
+          <div class="JB_menu puff">
+            <h2 class="menu_JB">Puff</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Vegetable Puff</span><span class="price">$2.99</span></li>
+               <li><span class="item">Manchurian Puff</span><span class="price">$3.99</span></li>
+               <li><span class="item">Paneer Puff</span><span class="price">$4.99</span></li>
+            </ul>
+            <div class="imgsec">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <img src="img/puff.png" alt="Puff">
+            </div>
+            <h2 class="menu_JB Maggi">Maggi</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Vegetable Maggi<em>Butter</em></span><span class="price">$3.99</span></li>
+               <li><span class="item">Vegetable Maggi<em>Cheese</em></span><span class="price">$4.49</span></li>
+            </ul>
+            
+            <div class="imgsec fries">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 270 340" class="ag-sherlock_smoke">
+                 <mask id="smokeBlick1" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-1.png" width="168" height="238" x="58" y="92"></image>
+                 </mask>
+                 <mask id="smokeBlick2" x="0" y="0" width="100%" height="100%">
+                   <image xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-3.png" width="124" height="246" x="69" y="79"></image>
+                 </mask>
+                 <image id="blickSmoke1" mask="url(#smokeBlick1)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-2.png" width="143" height="397" x="83" y="112.564" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="332" to="-280" dur="12s" begin="0s" repeatCount="indefinite"></animate>
+                 </image>
+                 <image id="blickSmoke2" mask="url(#smokeBlick2)" xlink:href="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/sherlock-smoking/images/smoke-4.png" width="169" height="287" x="69" y="19.2447" style="opacity: 0.5;">
+                   <animate attributeName="y" attributeType="XML" from="305" to="-180" dur="9s" begin="5s" repeatCount="indefinite"></animate>
+                 </image>
+               </svg>
+               <img src="img/maggi.png" alt="French Fries">
+
+            </div>
+         </div>
+      </div>
+      <div class="col-lg-3 menu">
+         <div class="JB_menu juices">
+            <h2 class="menu_JB">Burger & hot dog</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Vegetable Burger<em>Regular</em></span><span class="price">$4.99</span></li>
+               <li><span class="item">Vegetable Burger<em>Cheese</em></span><span class="price">$5.99</span></li>
+               <li><span class="item">Vegetable Hot Dog<em>Regular</em></span><span class="price">$4.99</span></li>
+               <li><span class="item">Vegetable Hot Dog<em>Cheese</em></span><span class="price">$5.99</span></li>
+            </ul>
+            <h2 class="menu_JB pulao">Executive Bites</h2>
+            <ul class="menuspoints">
+               <li><span class="item">Chole Vada</span><span class="price">$5.49</span></li>
+               <li><span class="item">Chole Tikki</span><span class="price">$6.49</span></li>
+               <li><span class="item">Chole Malabar Paratha</span><span class="price">$7.49</span></li>
+            </ul>
+            
+            
+            <div class="imgsec"><img src="img/chole.png" alt="JB"></div>
+         </div>
+      </div>
+   </div>
+</section>
+
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src="js/bootstrap.js"></script>
+<script>
+   jQuery(document).ready(function(){
+      // var width = jQuery(window).width();
+      // var height = jQuery(window).height();
+      // alert(width +'sfd'+ height);
+
+
+   });
+  
+   
+
+</script>
+</body>
+</html>
